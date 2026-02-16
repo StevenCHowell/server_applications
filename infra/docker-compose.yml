@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:latest
+    restart: always  # restart policy
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}  # user to create, from .env file
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}  # password for the user, from .env file
+      POSTGRES_DB: ${POSTGRES_DB}  # db to create, from .env file
+    volumes:
+      - postgres_data:/mnt/data/postgresql/data  # persistent data
+
+volumes:
+  postgres_data:
