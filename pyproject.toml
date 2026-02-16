@@ -1,0 +1,13 @@
+[project]
+name = "my-server-apps"
+version = "0.1.0"
+description = "My Server Apps"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "black>=25.1.0",
+    "ipykernel>=7.0.0a2",
+    "ipython>=9.4.0",
+    "isort>=6.0.1",
+    "pre-commit>=4.3.0",
+]
